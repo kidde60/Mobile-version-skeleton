@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #191765;
+  font-family: Roboto, sans-serif;
+  color: #f5f5ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-top: 10%;
+}
+
+.logo {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+  background-image: url(images/Ellipse18.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  background-position-y: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #7d73fc;
+  padding: 60px 0 0 50px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #edecff;
+  text-align: center;
+  padding: 30px 0 0 40px;
+  margin: 0;
+}
+
+.main p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.technologies {
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url(images/Ellipse19.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: top;
+}
+
+h3 {
+  color: #9490ff;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.home {
+  padding: 0 24px;
+}
+
+.technologies ul {
+  list-style: none;
+}
+
+.technologies ul li {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 50px 30px;
+}
