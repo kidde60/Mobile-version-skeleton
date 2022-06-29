@@ -86,6 +86,7 @@ h3 {
 }
 
 .icons {
+  list-style: none;
   display: flex;
   justify-content: space-evenly;
   margin: 50px 50px 30px;
