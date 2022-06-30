@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background: #191765;
-  font-family: Roboto, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #f5f5ff;
 }
 
@@ -76,11 +76,21 @@ h3 {
   list-style: none;
 }
 
-.list li {
+.item {
   padding: 10px 20px;
   font-size: 15px;
   line-height: 20px;
-  border-right: 2px solid white;
+  font-weight: 500;
+  border-right: 1px solid #555;
+  color: #fff;
+}
+
+.Ruby {
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
 }
 
 .technologies ul li {
@@ -95,12 +105,22 @@ h3 {
   margin: 50px 50px 30px;
 }
 
+.recent-work {
+  padding: 0 24px;
+}
+
 .recent-work h1 {
   text-align: left;
-  padding: 0 24px;
   font-size: 40px;
   line-height: 52px;
   color: #9490ff;
+  padding-left: 0;
+  padding-bottom: 30px;
+}
+
+.hr hr {
+  border: 1px solid #646369;
+  height: 0;
 }
 
 .work {
@@ -137,6 +157,8 @@ h3 {
   line-height: 28px;
   text-align: left;
   padding: 20px 0;
+  color: #dcdce8;
+  font-weight: 400;
 }
 
 .holder h2 {
@@ -150,10 +172,6 @@ h3 {
   display: flex;
   padding: 0;
   justify-content: flex-start;
-}
-
-.ruby {
-  border-right: none;
 }
 
 .btn {
