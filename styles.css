@@ -56,11 +56,11 @@ h2 {
 }
 
 .technologies {
-  padding-right: 10%;
+  padding-right: 20%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: url(images/Ellipse19.svg);
+  background-image: url(images/Ellipse19left.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: top;
@@ -72,12 +72,15 @@ h3 {
   line-height: 24px;
 }
 
-.home {
-  padding: 0 24px;
-}
-
 .technologies ul {
   list-style: none;
+}
+
+.list li {
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 20px;
+  border-right: 2px solid white;
 }
 
 .technologies ul li {
@@ -90,4 +93,95 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   margin: 50px 50px 30px;
+}
+
+.recent-work h1 {
+  text-align: left;
+  padding: 0 24px;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490ff;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.work h2 {
+  font-size: 30px;
+  color: #a2a3ae;
+  padding: 0 10px;
+}
+
+#work {
+  display: grid;
+  padding: 0;
+}
+
+.background1 {
+  padding: 50px 24px;
+  background-image: url(images/Ellipse1.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.stories img,
+.stories1 img {
+  width: 100%;
+}
+
+.holder p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.holder h2 {
+  padding-left: 0;
+  font-size: 32px;
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.ruby {
+  border-right: none;
+}
+
+.btn {
+  width: 89px;
+  height: 48px;
+  background: #7d73fc;
+  font-size: 12px;
+  color: #edecff;
+  border: none;
+}
+
+.background2 {
+  padding: 50px 24px;
+  background-image: url(images/Ellipse2.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.background3 {
+  padding: 50px 24px;
+  background-image: url(images/Ellipse3.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.background4 {
+  padding: 50px 24px;
+  background-image: url(images/Ellipse4.svg);
+  background-position: right;
+  background-repeat: no-repeat;
 }

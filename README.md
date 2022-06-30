@@ -1,11 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton
+# Portfolio: mobile version
 
-> For the first milestone in the process of creating your portfolio website, you will:
-
-- set up a new repository and prepare it for development using best practices (e.g. linters).
-- build the first 2 sections of the mobile website.
+> For the second milestone in building your portfolio website, you will create the mobile website section where you will list your portfolio projects.
 
 
 ## Built With
