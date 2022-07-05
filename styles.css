@@ -276,13 +276,19 @@ input {
 
 .btn:hover {
   background: #7d73fc;
+  color: #fff;
+  font-size: 12px;
 }
 
 .btn:active {
   background: #5e42d7;
+  color: #eaeaf6;
+  font-size: 12px;
 }
 
 .btn:disabled {
   background: #2a2b33;
   cursor: not-allowed;
+  color: #c8c8d4;
+  font-size: 12px;
 }
