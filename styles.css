@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
   padding: 0;
   margin: 0;
@@ -291,4 +293,187 @@ input {
   cursor: not-allowed;
   color: #c8c8d4;
   font-size: 12px;
+}
+
+/* media query */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  header {
+    margin: 0;
+    padding-top: 26px;
+  }
+
+  .desktop {
+    width: 40%;
+  }
+
+  .desktop ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/circle\ 1\ header.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .main h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 105px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .main h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  .main p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    padding: 64px 25% 0;
+  }
+
+  .hr1 {
+    margin: 30px 25% 0;
+  }
+
+  .technologies {
+
+    display: flex;
+    justify-content: space-around;
+    background-image: url(images/circle\ 2\ header.svg);
+    background-position: right;
+    padding: 30px 25% 20px;
+  }
+
+  .technologies ul {
+    padding: 37px 0;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+
+  }
+
+  .recent-work {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .recent-work h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 114px;
+    text-align: left;
+  }
+
+  .background1 {
+    display: flex;
+    background-image: url(images/Ellipse19.svg);
+    background-position: left;
+    padding: 50px 10% 88px;
+  }
+
+  .stories {
+    width: 100%;
+    margin-right: 24px;
+  }
+
+  .holder {
+    width: 40%;
+  }
+
+  .stories1 {
+    width: 100%;
+    margin-left: 24px;
+  }
+
+  .holder h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  .holder p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .background2 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(images/Ellipse20.svg);
+    background-position: bottom right;
+    padding: 0 10% 88px;
+  }
+
+  .background3 {
+    display: flex;
+    background-image: url(images/Ellipse21.svg);
+    background-position: left;
+    padding: 0 10% 0;
+  }
+
+  .background4 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(images/Ellipse22.svg);
+    background-position: top right;
+    padding: 88px 10% 0;
+  }
+
+  .recent-work h1 {
+    animation: head 2s linear;
+    position: relative;
+  }
+
+  @keyframes head {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: 200px;
+    }
+  }
+
 }
