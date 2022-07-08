@@ -188,6 +188,7 @@ h3 {
   font-size: 12px;
   color: #edecff;
   border: none;
+  cursor: pointer;
 }
 
 .background2 {
@@ -319,7 +320,7 @@ input {
 
   .nav-list a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -366,7 +367,6 @@ input {
   }
 
   .technologies {
-
     display: flex;
     justify-content: space-around;
     background-image: url(images/circle\ 2\ header.svg);
@@ -384,20 +384,16 @@ input {
     font-weight: 700;
     line-height: 29px;
     text-align: left;
+  }
 
+  .line {
+    display: flex;
+    justify-content: space-around;
   }
 
   .recent-work {
     padding-left: 10%;
     padding-right: 10%;
-  }
-
-  .recent-work h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 114px;
-    text-align: left;
   }
 
   .background1 {
@@ -462,18 +458,43 @@ input {
   }
 
   .recent-work h1 {
-    animation: head 2s linear;
-    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 114px;
+    text-align: left;
   }
 
-  @keyframes head {
-    from {
-      left: 0;
-    }
-
-    to {
-      left: 200px;
-    }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .contact p {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 20%;
+  }
+
+  input {
+    height: 48px;
+    width: 684px;
+  }
+
+  .email-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+
+  .icon {
+    width: 15%;
+    padding: 0;
+  }
+
+  .email {
+    padding: 0 10px;
+  }
 }
