@@ -8,6 +8,10 @@ body {
   color: #f5f5ff;
 }
 
+.desktop {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -105,6 +109,10 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   margin: 50px 50px 30px;
+}
+
+.bar {
+  display: none;
 }
 
 .recent-work {
@@ -302,12 +310,18 @@ input {
     display: none;
   }
 
+  .work1 {
+    display: none;
+  }
+
+
   header {
     margin: 0;
     padding-top: 26px;
   }
 
   .desktop {
+    display: block;
     width: 40%;
   }
 
@@ -386,9 +400,38 @@ input {
     text-align: left;
   }
 
+  .icons {
+    width: 20%;
+  }
+
   .line {
     display: flex;
     justify-content: space-around;
+  }
+
+  .bar {
+    padding-bottom: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .bar h2 {
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0;
+    color: #B3BAC5;
+  }
+
+  .bar img {
+    width: 18px;
+    height: 21.3px;
+    padding: 5px;
+
   }
 
   .recent-work {
