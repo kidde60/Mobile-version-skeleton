@@ -50,7 +50,7 @@ Install operating system that best work for you. -Install the latest version of 
 7. run npx stylelint "**/*.{css,scss}"
 
 ## Live Demo
-- https://kidde60.github.io/
+- [https://kidde60.github.io/](https://kidde60.github.io/Mobile-version-skeleton/)
 
 ## Author
 
