@@ -192,9 +192,9 @@ h3 {
 .btn {
   width: 89px;
   height: 48px;
-  background: #7d73fc;
+  background: #00f;
   font-size: 12px;
-  color: #edecff;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
