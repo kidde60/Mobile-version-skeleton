@@ -28,6 +28,8 @@ header {
 .mobile {
   display: inline-block;
   cursor: pointer;
+  position: absolute;
+  left: 15rem;
 }
 
 .bar1,
@@ -55,8 +57,26 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.nav-mobile {
+  position: relative;
+  width: 100vw;
+}
+
 .mobile-view {
   display: none;
+  height: 100vh;
+  position: absolute;
+  top: 3rem;
+  background-color: #191765;
+}
+
+.mobile-view ul {
+  list-style: none;
+  float: left;
+}
+
+.mobile-view ul li {
+
 }
 
 .main {
@@ -96,9 +116,7 @@ h2 {
 }
 
 .technologies {
-  padding-right: 20%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   background-image: url(images/Ellipse19left.svg);
   background-repeat: no-repeat;
