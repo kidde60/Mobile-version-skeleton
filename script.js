@@ -1,13 +1,9 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-}
-let mobile = document.querySelector('.mobile-view');
-let navmenu = document.querySelector('.mobile');
-navmenu.addEventListener("click", function () {
-    if (mobile.style.display === "block") {
-        mobile.style.display = "none";
+let checkbox = document.querySelector('.navigation__checkbox');
+let menu = document.querySelector('.mobile-view');
+checkbox.addEventListener("click", function () {
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
     } else {
-        mobile.style.display = "block";
+        menu.style.display = 'block';
     }
-
 });
