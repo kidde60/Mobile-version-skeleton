@@ -32,6 +32,8 @@ header {
 .mobile {
   display: inline-block;
   cursor: pointer;
+  position: absolute;
+  left: 15rem;
 }
 
 .bar1,
@@ -59,7 +61,13 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.nav-mobile {
+  position: relative;
+  width: 100vw;
+}
+
 .mobile-view {
+<<<<<<< HEAD
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -80,6 +88,22 @@ header {
 .navigation__button {
   position: absolute;
   right: 1rem;
+=======
+  display: none;
+  height: 100vh;
+  position: absolute;
+  top: 3rem;
+  background-color: #191765;
+}
+
+.mobile-view ul {
+  list-style: none;
+  float: left;
+}
+
+.mobile-view ul li {
+
+>>>>>>> 8712c92fc0f8d14575dd29522bab03e4aca7bc5b
 }
 
 .main {
@@ -119,9 +143,7 @@ h2 {
 }
 
 .technologies {
-  padding-right: 20%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   background-image: url(images/Ellipse19left.svg);
   background-repeat: no-repeat;
