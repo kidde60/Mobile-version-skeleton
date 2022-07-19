@@ -10,22 +10,24 @@
 </head>
 
 <body>
+
+  </div>
   <header>
     <a href="#" class="logo">KGW</a>
-    <nav class="mobile">
-      <img src="images/Menu.png" alt="menu" />
-    </nav>
-    <nav class="desktop">
-      <ul>
-        <li class="nav-list"><a href="#">Portoflio</a></li>
-        <li class="nav-list"><a href="#">About</a></li>
-        <li class="nav-list"><a href="#">Contact</a></li>
-        <li class="nav-list"><a href="#"><img src="images/Union.png" alt="Envelope"></a></li>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a class="menu-link" href="#Portflio">Portoflio</a>
+        <a class="menu-link" href="#work">About</a>
+        <a class="menu-link" href="#Contact">Contact</a>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-      </ul>
-    </nav>
+
+
   </header>
-  <section class="main">
+  <section class="main" id="Portflio">
     <h1>Kidde George</h1>
     <h2>Software Developer</h2>
     <p>
@@ -196,7 +198,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="Contact">
     <div class="contact">
 
       <h1>CONTACT US</h1>
@@ -245,6 +247,7 @@
       <a href="#" class="email">kgeorgewilliam60@gmail.com</a>
     </div>
   </section>
+  <script src="javascript.js"></script>
 </body>
 
 </html>
