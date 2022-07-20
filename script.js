@@ -204,3 +204,25 @@ Data.forEach((item, index) => {
     }
   });
 });
+
+// form validation
+const contactForm = document.querySelector('.form');
+const email = document.querySelector('#email');
+const validationMessage = document.querySelector('#error');
+validationMessage.style.color = '#ff0000';
+validationMessage.style.fontSize = '16px';
+validationMessage.style.padding = '4px';
+contactForm.addEventListener("submit", (e) => {
+  let isValid = false;
+  if(email.value === email.value.toLowerCase()) {
+    isValid = true;
+  }
+  if(isValid === false) {
+    e.preventDefault();
+    validationMessage.innerText = 'Please type lowercase text';
+    setTimeout(() => {
+      validationMassege.textContent = '';
+    }, 5000);
+  }
+})
+
