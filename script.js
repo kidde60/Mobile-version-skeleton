@@ -154,8 +154,8 @@ Data.forEach((item, index) => {
       <li id="github">Github</li>
   </ul>
   <div class="popbtn">
-      <a href="#"><button class="button" id="pop" type="button">See Live <img src="images/source.png" alt=""></button></a>
-      <a href="https://github.com/kidde60/Portfolio-Mobile-version-skeleton"><button class="button" id="pop1" type="button">See Source <img src="images/Vector.png" alt=""></button></a>
+      <a href="#"><button class="button" id="pop" type="button">See Live <img src="images/source.png" alt="github"></button></a>
+      <a href="https://github.com/kidde60/Mobile-version-skeleton/tree/popup"><button class="button" id="pop1" type="button">See Source <img src="images/Vector.png" alt="github"></button></a>
   </div>
  `;
   // Button action
