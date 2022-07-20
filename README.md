@@ -1,14 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile version
+# Portfolio: details popup window
 
-> For the second milestone in building your portfolio website, you will create the mobile website section where you will list your portfolio projects.
+> For this milestone of your portfolio website, you will implement a popup window that includes the project details in both desktop and mobile. In order to do that, you will need to store the information about your projects in a JavaScript object.
 
 
 ## Built With
 
 - Html
 - Css
+- JavaScript
 
 ## Getting Started
 **Clone Your Github Repository**
@@ -48,6 +49,29 @@ Install operating system that best work for you. -Install the latest version of 
 5. .stylelintrc
 6. run npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 7. run npx stylelint "**/*.{css,scss}"
+8. eslint:
+    name: ESLint
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Setup ESLint
+        run: |
+          npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json
+      - name: ESLint Report
+        run: npx eslint .
+  nodechecker:
+    name: node_modules checker
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check node_modules existence
+        run: |
+          if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;32mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+
 
 ## Live Demo
 - [https://kidde60.github.io/](https://kidde60.github.io/Mobile-version-skeleton/)

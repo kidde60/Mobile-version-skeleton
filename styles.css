@@ -25,6 +25,75 @@ header {
   text-decoration: none;
 }
 
+.X {
+  color: #fff;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.16);
+  border: 0;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+
+.popup-window {
+  background-color: rgba(255, 255, 255, 0.16);
+  padding: 24px 24px 50px;
+  width: auto;
+  height: 100vh;
+  margin: 5% 5% 3%;
+}
+
+.popup-window p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.popbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  padding: 12px 0;
+  width: 108px;
+  height: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #edecff;
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.lists li {
+  border-left: 1px solid #fff;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  font-size: 15px;
+  padding: 0 2%;
+  text-align: center;
+}
+
+#github {
+  border-right: 1px solid #fff;
+}
+
 .main {
   text-align: center;
   padding: 20px;
@@ -138,6 +207,16 @@ h3 {
   height: 0;
 }
 
+.post {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  color: #fff;
+}
+
 .work {
   display: flex;
   justify-content: center;
@@ -165,6 +244,11 @@ h3 {
 .stories img,
 .stories1 img {
   width: 100%;
+}
+
+#img img {
+  width: 100%;
+  height: 181px;
 }
 
 .holder p {
@@ -324,11 +408,49 @@ input {
     width: 40%;
   }
 
+  .popbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 37%;
+  }
+
   .desktop ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 0;
+  }
+
+  #pop {
+    margin-right: 80px;
+  }
+
+  .post {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 32px;
+    margin: 0;
+    color: #fff;
+  }
+
+  .lists {
+    display: flex;
+    justify-content: center;
+    padding: 0 30%;
+    list-style: none;
+  }
+
+  .lists li {
+    border-left: 1px solid #fff;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    font-size: 15px;
+    padding: 0 5%;
+    text-align: center;
   }
 
   .nav-list a {
@@ -373,6 +495,13 @@ input {
     line-height: 32px;
     text-align: center;
     padding: 64px 25% 0;
+  }
+
+  .popup-window p {
+    text-align: center;
+    padding: 0 20%;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   .hr1 {
@@ -431,6 +560,11 @@ input {
     padding: 5px;
   }
 
+  #img img {
+    width: 100%;
+    height: 50vh;
+  }
+
   .recent-work {
     padding-left: 10%;
     padding-right: 10%;
@@ -449,7 +583,7 @@ input {
   }
 
   .holder {
-    width: 40%;
+    width: 60%;
   }
 
   .stories1 {
