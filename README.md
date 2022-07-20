@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: details popup window
+# Portfolio: validate contact form
 
-> For this milestone of your portfolio website, you will implement a popup window that includes the project details in both desktop and mobile. In order to do that, you will need to store the information about your projects in a JavaScript object.
+> For this milestone of your portfolio website, you will implement a client-side validation of the data in the contact form before submission.
 
 
 ## Built With
