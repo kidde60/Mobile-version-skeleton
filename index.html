@@ -13,14 +13,22 @@
   <!-- Header Section -->
   <header class="header">
     <a href="#" class="logo">KGW</a>
-    <nav class="mobile">
-      <img src="images/Menu.png" alt="menu" />
-    </nav>
+    <div class="navigation">
+      <div id="myNav" class="overlay mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a class="menu-link" href="#Portflio">Portfolio <span class="greter">&#10095;</span></a>
+          <a class="menu-link1" href="#work">About <span class="greter">&#10095;</span></a>
+          <a class="menu-link2" href="#Contact">Contact <span class="greter">&#10095;</span></a>
+        </div>
+      </div>
+      <span onclick="openNav()" class="mobile">&#9776;</span>
+    </div>
     <nav class="desktop">
       <ul>
-        <li class="nav-list"><a href="#">Portoflio</a></li>
-        <li class="nav-list"><a href="#">About</a></li>
-        <li class="nav-list"><a href="#">Contact</a></li>
+        <li class="nav-list"><a href="#Portflio">Portfolio</a></li>
+        <li class="nav-list"><a href="#work">About</a></li>
+        <li class="nav-list"><a href="#Contact">Contact</a></li>
         <li class="nav-list"><a href="#"><img src="images/Union.png" alt="Envelope"></a></li>
 
       </ul>
@@ -125,7 +133,7 @@
   <section class="work-section" id="work">
   </section>
   <!-- Contact Section -->
-  <section class="contact-section">
+  <section class="contact-section" id="Contact">
     <div class="contact">
 
       <h1>CONTACT US</h1>

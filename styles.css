@@ -8,10 +8,6 @@ body {
   color: #f5f5ff;
 }
 
-.desktop {
-  display: none;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -20,11 +16,75 @@ header {
 }
 
 .logo {
-  font-size: 20px;
-  color: #fff;
   text-decoration: none;
+  color: #f5f5ff;
+  font-size: 25px;
+  text-align: center;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-link,
+.menu-link1,
+.menu-link2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+/* nav menu start */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-color: #191765;
+  background-image: url(images/menu-2.svg), url(images/menu-1.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: left, bottom right;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.greter {
+  color: #acb7c3;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #edecff;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  font-size: 30px;
+}
+
+/* nav menu end */
 .X {
   color: #fff;
   float: right;
@@ -45,6 +105,23 @@ header {
 .popup-window p {
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.lists li {
+  border-left: 1px solid #fff;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  font-size: 15px;
+  padding: 0 2%;
   text-align: center;
 }
 
@@ -71,23 +148,6 @@ header {
   color: #edecff;
   background: #7d73fc;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
-
-.lists {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-}
-
-.lists li {
-  border-left: 1px solid #fff;
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
-  font-size: 15px;
-  padding: 0 2%;
-  text-align: center;
 }
 
 #github {
