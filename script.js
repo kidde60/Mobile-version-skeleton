@@ -1,3 +1,5 @@
+const { array } = require("assert-plus");
+
 // nav menu
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
@@ -258,4 +260,26 @@ contactForm.addEventListener('submit', (e) => {
       validationMessage.textContent = '';
     }, 5000);
   }
+});
+// Local sorage
+let form = document.querySelector('#form');
+let formData = {
+  name: document.querySelector('#name').value,
+  email: document.querySelector('#email').value,
+  textarea: document.querySelector('#message').value
+}
+let getFormData = window.localStorage.getItem(formData);
+if (getFormData) {
+  getFormData = JSON.parse(getFormData);
+  document.querySelector('#name').value = getFormData.name;
+  document.querySelector('#email').value = getFormData.email;
+  document.querySelector('#message').value = getFormData.textarea;
+}
+Array.from(form).forEach((field) => {
+  field.addEventListener('input', () => {
+    formData.name = document.querySelector('#name').value,
+      formData.email = document.querySelector('#email').value,
+      formData.textarea = document.querySelector('#message').value
+    localStorage.setItem(formData, JSON.stringify(formData))
+  })
 });
