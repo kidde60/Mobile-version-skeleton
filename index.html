@@ -13,21 +13,14 @@
   <header>
     <a href="#" class="logo">KGW</a>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button" id="navi-button">
-        <nav class="mobile">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </nav>
-      </label>
-      <nav class="mobile-view">
-        <div class="mobile-view-1">
-          <a href="#Portfolio" class="nav-mobile">Portfolio</a>
-          <a href="#About" class="nav-mobile">About</a>
-          <a href="#Contact" class="nav-mobile">Contact</a>
+      <div id="myNav" class="overlay mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a class="menu-link" href="#Portflio">Portoflio</a>
+          <a class="menu-link1" href="#work">About</a>
+          <a class="menu-link2" href="#Contact">Contact</a>
         </div>
-      </nav>
+      </div>
 
       <nav class="desktop">
         <ul>
