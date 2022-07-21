@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <header>
+  <!-- Header Section -->
+  <header class="header">
     <a href="#" class="logo">KGW</a>
     <div class="navigation">
       <div id="myNav" class="overlay mobile">
@@ -33,6 +34,7 @@
       </ul>
     </nav>
   </header>
+  <!-- Main Section -->
   <section class="main">
     <h1>Kidde George</h1>
     <h2>Software Developer</h2>
@@ -42,6 +44,7 @@
       need coded, don't hestiate to contact me.
     </p>
   </section>
+  <!-- Home Section -->
   <section class="home">
     <div class="hr1">
       <hr />
@@ -112,7 +115,7 @@
       </div>
     </div>
   </section>
-  <section id="work">
+  <div class="disable">
     <div class="work work1">
       <img src="images/arrow.svg" alt="arrow" />
       <h2>work</h2>
@@ -123,88 +126,14 @@
         <hr />
       </div>
     </div>
-    <div class="background1 background">
-      <div class="stories">
-        <img src="images/placeholder.png" alt="placeholder" />
-      </div>
-      <div class="holder">
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="list">
-          <li class="item">css</li>
-          <li class="item">html</li>
-          <li class="item">bootstrap</li>
-          <li class="Ruby">Ruby</li>
-        </ul>
-        <button type="button" class="btn">See Project</button>
-      </div>
-    </div>
-    <div class="background2 background">
-      <div class="stories1">
-        <img src="images/placeholder.png" alt="placeholder" />
-      </div>
-      <div class="holder">
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="list">
-          <li class="item">css</li>
-          <li class="item">html</li>
-          <li class="item">bootstrap</li>
-          <li class="Ruby">Ruby</li>
-        </ul>
-        <button type="button" class="btn">See Project</button>
-      </div>
-    </div>
-    <div class="background3 background">
-      <div class="stories">
-        <img src="images/placeholder.png" alt="placeholder" />
-      </div>
-      <div class="holder">
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="list">
-          <li class="item">css</li>
-          <li class="item">html</li>
-          <li class="item">bootstrap</li>
-          <li class="Ruby">Ruby</li>
-        </ul>
-        <button type="button" class="btn">See Project</button>
-      </div>
-    </div>
-    <div class="background4 background">
-      <div class="stories1">
-        <img src="images/placeholder.png" alt="placeholder" />
-      </div>
-      <div class="holder">
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="list">
-          <li class="item">css</li>
-          <li class="item">html</li>
-          <li class="item">bootstrap</li>
-          <li class="Ruby">Ruby</li>
-        </ul>
-        <button type="button" class="btn">See Project</button>
-      </div>
-    </div>
+  </div>
+  <!-- Dynamic Project Section -->
+  <div class="popup-window d-none">
+  </div>
+  <section class="work-section" id="work">
   </section>
-  <section id="Contact">
+  <!-- Contact Section -->
+  <section class="contact-section" id="#Contact">
     <div class="contact">
 
       <h1>CONTACT US</h1>
@@ -219,6 +148,7 @@
         <textarea name="Message" id="message" rows="10" maxlength="500" placeholder="Enter text here"
           required></textarea>
         <button type="submit" class="btn" id="btn">See Project</button>
+        <span id="error"></span>
       </form>
     </div>
     <div class="line">
