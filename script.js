@@ -1,4 +1,3 @@
-const { array } = require("assert-plus");
 
 // nav menu
 function openNav() {
@@ -262,24 +261,25 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 // Local sorage
-let form = document.querySelector('#form');
-let formData = {
-  name: document.querySelector('#name').value,
-  email: document.querySelector('#email').value,
-  textarea: document.querySelector('#message').value
+const formData = {
+  formName: document.getElementById('name').value,
+  formEmail: document.getElementById('email').value,
+  formText: document.getElementById('message').value,
 }
-let getFormData = window.localStorage.getItem(formData);
-if (getFormData) {
+
+let getFormData = window.localStorage.getItem('formData');
+if(getFormData) {
   getFormData = JSON.parse(getFormData);
-  document.querySelector('#name').value = getFormData.name;
-  document.querySelector('#email').value = getFormData.email;
-  document.querySelector('#message').value = getFormData.textarea;
+  document.getElementById('name').value = getFormData.formName
+  document.getElementById('email').value = getFormData.formEmail
+  document.getElementById('message').value = getFormData.formText
 }
-Array.from(form).forEach((field) => {
+
+Array.from(contactForm).forEach((field) => {
   field.addEventListener('input', () => {
-    formData.name = document.querySelector('#name').value,
-      formData.email = document.querySelector('#email').value,
-      formData.textarea = document.querySelector('#message').value
-    localStorage.setItem(formData, JSON.stringify(formData))
+    formData.formName = document.getElementById('name').value
+    formData.formEmail = document.getElementById('email').value
+    formData.formText = document.getElementById('message').value
+    localStorage.setItem('formData', JSON.stringify(formData))
   })
 });
