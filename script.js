@@ -219,24 +219,24 @@ Data.forEach((item, index) => {
     }
   });
   const X = document.querySelector('.X');
-  X.addEventListener('click', () => {
+  X.addEventListener('click', () => 
     if (parent.classList.contains('d-none')) {
-      parent.classList.remove('d-none');
-      workSection.style.display = 'none';
-      disable.style.display = 'none';
-      contactSection.style.display = 'none';
-      homeSection.style.display = 'none';
-      mainSection.style.display = 'none';
-      headerSection.style.display = 'none';
-    } else {
-      parent.classList.add('d-none');
-      workSection.style.display = 'block';
-      disable.style.display = 'block';
-      contactSection.style.display = 'block';
-      homeSection.style.display = 'block';
-      mainSection.style.display = 'block';
-      headerSection.style.display = 'flex';
-    }
+    parent.classList.remove('d-none');
+    workSection.style.display = 'none';
+    disable.style.display = 'none';
+    contactSection.style.display = 'none';
+    homeSection.style.display = 'none';
+    mainSection.style.display = 'none';
+    headerSection.style.display = 'none';
+  } else {
+    parent.classList.add('d-none');
+    workSection.style.display = 'block';
+    disable.style.display = 'block';
+    contactSection.style.display = 'block';
+    homeSection.style.display = 'block';
+    mainSection.style.display = 'block';
+    headerSection.style.display = 'flex';
+  }
   });
 });
 
@@ -268,7 +268,7 @@ const formData = {
 }
 
 let getFormData = window.localStorage.getItem('formData');
-if(getFormData) {
+if (getFormData) {
   getFormData = JSON.parse(getFormData);
   document.getElementById('name').value = getFormData.formName
   document.getElementById('email').value = getFormData.formEmail
