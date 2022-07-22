@@ -219,7 +219,7 @@ Data.forEach((item, index) => {
     }
   });
   const X = document.querySelector('.X');
-  X.addEventListener('click', () => 
+  X.addEventListener('click', () => {
     if (parent.classList.contains('d-none')) {
     parent.classList.remove('d-none');
     workSection.style.display = 'none';
